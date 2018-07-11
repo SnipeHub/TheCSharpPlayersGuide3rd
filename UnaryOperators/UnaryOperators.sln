@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnaryOperators", "UnaryOperators\UnaryOperators.csproj", "{98EA8882-90AF-46EF-AE0A-DBFA064E7591}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98EA8882-90AF-46EF-AE0A-DBFA064E7591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98EA8882-90AF-46EF-AE0A-DBFA064E7591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98EA8882-90AF-46EF-AE0A-DBFA064E7591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98EA8882-90AF-46EF-AE0A-DBFA064E7591}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7A1E1F6-ECA7-4FED-A3AD-8D36D68034F6}
+	EndGlobalSection
+EndGlobal
