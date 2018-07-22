@@ -36,8 +36,8 @@ namespace BasicMaths        // Chp 7 Basic maths
             int g = f + 4; // 5
             int h = f - g; // -4
 
-            Console.WriteLine("g = " + g);
-            Console.WriteLine("h = " + h);
+            Console.Write("g = " + g);
+            Console.Write("h = " + h);
 
             // chaining many operations together
 
