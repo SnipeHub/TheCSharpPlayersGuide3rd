@@ -16,6 +16,7 @@ namespace AreaOfTraingleCalculator
             double area = bh / 2; // 15
 
             Console.WriteLine("The area of the triangle is: " + area);
+            Console.ReadKey();
         }
     }
 }
