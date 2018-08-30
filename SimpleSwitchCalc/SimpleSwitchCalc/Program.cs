@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SimpleSwitchCalc
 {
@@ -51,6 +47,20 @@ namespace SimpleSwitchCalc
                 // output
                 Console.WriteLine($"Your Answer is: {result}");
                 Console.ReadKey();
+
+            // Reset or end program
+            Console.WriteLine("Would you like to reset the calculator or end? (Press 1 to reset or 0 to end)");
+            string inputResetString = Console.ReadLine();
+            int inputReset = Convert.ToInt32(inputResetString);
+
+            if (inputReset == 1)
+            {
+                StayCheck();
+            }
+            else if (inputReset == 0)
+            {
+                return;
+            }
         }
     }
 
