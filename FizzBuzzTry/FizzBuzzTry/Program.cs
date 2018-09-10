@@ -11,7 +11,7 @@ namespace FizzBuzzTry
 
             Console.WriteLine("The FizzBuzz Challenge!\n");
 
-            for (i = 1; i <= 100; i++) // ++i will increment the value of i, and return the incremented value. i++ will increment i, but return the original value of i held before being incremented.
+            for (i = 1; i <= 100; ++i) // ++i will increment the value of i, and return the incremented value. i++ will increment i, but return the original value of i held before being incremented.
             {
                 if (i % 15 == 0) // To print our multiples of 15
                 
