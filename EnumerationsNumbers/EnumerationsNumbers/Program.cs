@@ -4,38 +4,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnumerationsNumbers
+namespace EnumerationsNumbers // just a play around for myself, another way of doing it, if using user input, the previous way I did it is still correct if you just want to return the enum values
 {
     // we can assign specific values to our enum
-    enum CarNames { Ferrari = 1, McLaren = 3, Lamborghini = 4, Dodge = 10, Renault = 2};
+    public enum CarNames { Ferrari = 1, McLaren = 2, Lamborghini = 3, Dodge = 5, Renault = 4};
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("------| Our Awesome Car List |------");
-            Console.WriteLine("Here we define our enumeration");
+      
             Console.WriteLine();
+            Console.WriteLine("Please enter a number between 1 to 5: ");
+            string numberString = Console.ReadLine();
+            int carNumber = Convert.ToInt32(numberString);
 
-            int ferrariAsInt = (int)CarNames.Ferrari;
-            Console.WriteLine($"Our first car up is {CarNames.Ferrari}. It's number is {ferrariAsInt}");
-            Console.WriteLine();
+            // check if entry input is valid
+            if (carNumber > 0 && carNumber <= 5)
+            {
+                CarNames _carName = (CarNames)carNumber; // explicit convert from number
+                Console.WriteLine($"You chose number {numberString} and the car is: {_carName}");
+            }
+            else
+            {
+                // if incorrect input, restart
+                Console.WriteLine("You did not enter a valid number, please enter a number between 1 and 5.");
+                Console.WriteLine("Press enter to restart...");
+                Console.ReadKey();
+                Console.Clear();
 
-            int mclarenAsInt = (int)CarNames.McLaren;
-            Console.WriteLine($"Our enumeration is {CarNames.McLaren}. It's number is {mclarenAsInt}");
-            Console.WriteLine();
+                Program.Main();
+            }
 
-            int lamboAsInt = (int)CarNames.Lamborghini;
-            Console.WriteLine($"Our third car is the {CarNames.Lamborghini}. The number is {lamboAsInt}");
-            Console.WriteLine();
-
-            int dodgeAsInt = (int)CarNames.Dodge;
-            Console.WriteLine($"Next car is the {CarNames.Dodge}. The number is {dodgeAsInt}");
-            Console.WriteLine();
-
-            int renaAsInt = (int)CarNames.Renault;
-            Console.WriteLine($"Our last car on the list is the {CarNames.Renault}. The number is {renaAsInt}");
-            Console.WriteLine();
+            Console.ReadKey();
         }
     }
 }
