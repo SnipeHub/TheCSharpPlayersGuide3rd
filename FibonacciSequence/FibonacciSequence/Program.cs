@@ -18,6 +18,13 @@ namespace FibonacciSequence
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// Returns a number from the Fibonacci sequence, starting at 1.
+        /// Note that this implementation is not very optimized, and can
+        /// take a long timer if you're looking up large numbers.
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
         static ulong Fibonacci(int number)
         {
             if (number == 1)
