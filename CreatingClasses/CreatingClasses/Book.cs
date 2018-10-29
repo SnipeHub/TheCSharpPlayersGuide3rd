@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CreatingClasses
 {
-    class Book
+    internal class Book
     {
         // When creating variables in a class, you can't use var, you must specify the type. These are known as Instance Variables.
         // these instance variables can be accessed by any constructor
@@ -32,6 +32,21 @@ namespace CreatingClasses
             this.author = author;
             this.pages = pages;
             this.wordCount = wordCount;
+        }
+
+        public string GetTitle()
+        {
+            return title;
+        }
+
+        public void SetTitle(string title)
+        {
+            this.title = title;
+        }
+
+        public void AssignWordCountFromText(string text)
+        {
+            wordCount = text.Split(' ').Length;
         }
     }
 }
